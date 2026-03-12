@@ -1,7 +1,22 @@
+:root {
+  --var1: #000000;
+  --var2: rgba(255, 255, 255, 0.5);
+  --var3: #e8ac1c;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: aquamarine;
+  background-color: transparent;
+  /*
+  background: rgb(0, 83, 56) url("../assets/img/homeHeader.png") no-repeat;
+  */
+}
+
+@font-face {
+  font-family: "Moth";
+  src: url("../assets/fonts/mythology_of_egypt/Mythology\ Of\ Egypt.otf");
 }
 
 .navbar {
@@ -9,16 +24,56 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 20px 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #ddd;
-  margin: 40px 100px ;
+  background-color: var(--var2);
+  margin: 40px 100px;
+  position: relative;
+}
+header {
+  position: absolute;
+  width: 100%;
+}
+.logo {
 }
 
-.logo{}
+.logo img {
+  width: 250px;
+}
 
 .navlinks {
   display: flex;
   gap: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin: 0;
+  height: 80vh;
+
+  background-image: url("../assets/img/homeHeader.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: row-reverse;
+  min-height: 800px;
+}
+.text {
+  flex: 0 0 35%;
+  margin-top: 150px;
+  font-family: moth;
+  font-size: 60pt;
+}
+
+.text {
+  text-decoration: none;
+  color: var(--var3);
 }
