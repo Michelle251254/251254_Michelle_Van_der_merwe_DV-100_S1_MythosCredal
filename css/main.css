@@ -25,10 +25,11 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 40px;
+  padding: 15px 40px;
   background-color: var(--var2);
   margin: 40px 100px;
   position: relative;
+  border-radius: 35px;
 }
 header {
   position: absolute;
@@ -66,14 +67,15 @@ header {
   flex-direction: row-reverse;
   min-height: 800px;
 }
-.text {
+.header {
   flex: 0 0 35%;
   margin-top: 150px;
   font-family: moth;
   font-size: 60pt;
 }
 
-.text {
+.header {
   text-decoration: none;
   color: var(--var3);
 }
+
