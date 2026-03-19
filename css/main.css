@@ -1,11 +1,11 @@
 :root {
-  --var1: #000000;
-  --var2: rgba(255, 255, 255, 0.5);
-  --var3: #e8ac1c;
-  --var4: Moth;
-  --var5: Metamorphous;
-  --var6: Poppins;
-  --var7: #ffffff;
+  --yellow: #f2a81d;
+  --navebarC: rgba(255, 255, 255, 0.5);
+  --primeF: #e8ac1c;
+  --blue: #002d67;
+  --Lblue: #16dcf2;
+  --meta: Metamorphous;
+  --pop: Poppins;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
   align-items: center;
 
   padding: 15px 40px;
-  background-color: var(--var2);
+  background-color: var(--navebarC);
   margin: 40px 100px;
   position: relative;
   border-radius: 35px;
@@ -38,8 +38,6 @@ body {
 header {
   position: absolute;
   width: 100%;
-}
-.logo {
 }
 
 .logo img {
@@ -53,7 +51,7 @@ header {
 
 .navlinks a {
   text-decoration: none;
-  color: black;
+  color: rgb(67, 67, 67);
   font-weight: 600;
 }
 
@@ -74,18 +72,94 @@ header {
   flex: 0 0 35%;
   margin-top: 374px;
   margin-right: 84px;
-  font-family: var(--var4);
+  font-family: moth;
   font-size: 70pt;
 }
 
 .header h1 {
   text-decoration: none;
-  color: var(--var3);
+  color: var(--primeF);
 }
 
 .header p {
   margin-left: 13px;
-  font-family: var(--var5);
+  font-family: var(--meta);
   font-size: 18pt;
-  color: var(--var7);
+  color: white;
 }
+
+.searchItem {
+  background-color: white;
+  border: none;
+}
+
+.bar {
+  border-right: solid black 2px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 55%;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+.section2{
+    display: flex;
+   padding: 20px 60px;
+   background-color: var(--blue);
+   padding: 20px;
+
+}
+
+.section2Container{
+  padding-left: 130px;
+  width: 60%;
+}
+
+.section2Info{
+padding: 100px;
+}
+
+.section2Info h3{
+color: var(--yellow);
+}
+
+.section2Info h1{
+color: white;
+}
+
+.section2Info p{
+color: white;
+}
+
+
+ 
+
+
+
+
+ <section class="section2">
+      
+      <h3>BEGIN YOUR JOURNEY</h3>
+      <h1>
+        Tiny Legends <br />
+        Big Hearts
+      </h1>
+      <p>
+        Begin your journey into legend: tiny dragons, <br />
+        shimmering pegasi, mischievous kitsune, and <br />
+        watchful basilisks are ready to meet their families.<br />
+        Delight in enchanted encounters, gentle care, and <br />
+        joyful playtime. Heartwarming bonds await as these <br />
+        legendary creatures find their forever homes.
+      </p>
+    </section>
+

@@ -12,6 +12,7 @@
 
     <title>The Mythos Cradle</title>
 
+    <!-- bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,12 +20,18 @@
       crossorigin="anonymous"
     />
 
+    <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/4178197db7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -40,12 +47,20 @@
           <a href="pages/about.html">Adopt</a>
           <a href="pages/contact.html">Contact</a>
         </div>
-        <div class="navSearch">
-          <p>Search</p>
+        <!-- Search not working -->
+        <div class="search">
+          <button class="searchItem">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input class="searchItem bar" type="search" placeholder="search" />
+          <button class="searchItem">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
         </div>
       </nav>
     </header>
 
+    <!-- I classify hero as section 1 -->
     <section class="hero">
       <div class="header">
         <h1>
@@ -55,12 +70,60 @@
         <p>Where legends become loved ones</p>
       </div>
     </section>
+    <!-- Carousel  -->
     <section class="section2">
-      <p></p>
-    </section>
-  </body>
+      <section class="section2Container">
+        <div id="#carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../assets/img/imageSlider1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
 
-  <body>
-    <div class="section"></div>
+          <button
+            class="carousel-control-prev"
+            href="#carouselExample"
+            type="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="section2Info">
+        <h3>BEGIN YOUR JOURNEY</h3>
+        <h1>
+          Tiny Legends <br />
+          Big Hearts
+        </h1>
+        <p>
+          Begin your journey into legend: tiny dragons, shimmering pegasi,<br>mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.
+        </p>
+      </section>
+    </section>
+
+    <!-- Carousel  -->
+
+    <!-- script link  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
