@@ -1,11 +1,13 @@
 :root {
-  --yellow: #f2a81d;
+  --yellow: #e9ad1c;
   --navebarC: rgba(255, 255, 255, 0.5);
-  --primeF: #e8ac1c;
-  --blue: #002d67;
-  --Lblue: #16dcf2;
+  --blue: #002d68;
+  --Lblue: #15d5f5;
   --meta: Metamorphous;
   --pop: Poppins;
+  --headings:40pt;
+  --subHeading: 18pt;
+  --paragraphs: 16pt;
 }
 
 body {
@@ -78,13 +80,13 @@ header {
 
 .header h1 {
   text-decoration: none;
-  color: var(--primeF);
+  color: var(--yellow);
 }
 
 .header p {
   margin-left: 13px;
   font-family: var(--meta);
-  font-size: 18pt;
+  font-size:var(--subHeading);
   color: white;
 }
 
@@ -120,24 +122,38 @@ header {
 }
 
 .section2Container{
-  padding-left: 130px;
+  padding: 103px;
   width: 60%;
 }
 
 .section2Info{
-padding: 100px;
+  padding-top: 190px;
+  width: 40%;
+
 }
 
 .section2Info h3{
 color: var(--yellow);
+font-family: var(--pop);
+font-weight:600;
+font-size: var(--subHeading);
+
 }
 
 .section2Info h1{
 color: white;
+font-family: var(--pop);
+font-weight: bold;
+font-size: var(--headings);
+padding-top: 5px;
 }
 
 .section2Info p{
 color: white;
+font-family: var(--pop);
+font-size: var(--paragraphs);
+padding-top: 20px;
+
 }
 
 
