@@ -3,11 +3,14 @@
   --navebarC: rgba(255, 255, 255, 0.5);
   --blue: #002d68;
   --Lblue: #15d5f5;
+  --dPurple: #2f004e;
+  --gray: #676767;
   --meta: Metamorphous;
   --pop: Poppins;
   --headings: 40pt;
   --subHeading: 18pt;
-  --paragraphs: 16pt;
+  --paragraphs: 15pt;
+  --buttonSize: 16pt;
 }
 
 body {
@@ -111,31 +114,31 @@ header {
   padding-right: 10px;
 }
 
-.section2 {
+.journeyCarousel {
   display: flex;
   padding: 20px 60px;
   background-color: var(--blue);
   padding: 20px;
 }
 
-.section2Container {
+.journeyCarouselContainer {
   padding: 103px;
   width: 60%;
 }
 
-.section2Info {
+.journey {
   padding-top: 190px;
   width: 40%;
 }
 
-.section2Info h3 {
+.journey h3 {
   color: var(--yellow);
   font-family: var(--pop);
   font-weight: 600;
   font-size: var(--subHeading);
 }
 
-.section2Info h1 {
+.journey h1 {
   color: white;
   font-family: var(--pop);
   font-weight: bold;
@@ -143,9 +146,78 @@ header {
   padding-top: 5px;
 }
 
-.section2Info p {
+.journey p {
   color: white;
   font-family: var(--pop);
   font-size: var(--paragraphs);
   padding-top: 20px;
+}
+
+.journey button {
+  padding: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 20px;
+  border-radius: 16px;
+  color: white;
+  background-color: var(--Lblue);
+  font-family: var(--pop);
+  font-weight: 650;
+  font-size: var(--buttonSize);
+}
+
+.theCradle {
+  display: flex;
+  margin: 50px;
+  margin-left: 135px;
+  margin-top: 60px;
+}
+
+.theCradleText {
+  margin: 20px;
+  margin-top: 60px;
+}
+
+.theCradleText h4 {
+  font-family: var(--pop);
+  font-size: var(--paragraphs);
+  color: var(--Lblue);
+  margin-bottom: 20px;
+}
+
+.theCradleText h2 {
+  font-family: var(--pop);
+  font-size: 28pt;
+  font-weight: 700;
+  color: var(--dPurple);
+  margin-bottom: 20px;
+}
+
+.theCradleText p {
+  font-family: var(--pop);
+  font-size: var(--paragraphs);
+  color: var(--gray);
+}
+
+.theCradleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-left: 20px;
+}
+
+.theCradleCorner {
+  border-radius: 25px;
+}
+
+.pastFriendsCorner{
+  border-radius: 16px;
+}
+
+.pastFriends{
+  display: flex;
+}
+
+.pastFriendsContainer{
+  flex-direction: row;
 }
