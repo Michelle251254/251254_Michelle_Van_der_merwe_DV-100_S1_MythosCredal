@@ -5,7 +5,7 @@
   --Lblue: #15d5f5;
   --meta: Metamorphous;
   --pop: Poppins;
-  --headings:40pt;
+  --headings: 40pt;
   --subHeading: 18pt;
   --paragraphs: 16pt;
 }
@@ -86,7 +86,7 @@ header {
 .header p {
   margin-left: 13px;
   font-family: var(--meta);
-  font-size:var(--subHeading);
+  font-size: var(--subHeading);
   color: white;
 }
 
@@ -111,71 +111,41 @@ header {
   padding-right: 10px;
 }
 
-
-
-.section2{
-    display: flex;
-   padding: 20px 60px;
-   background-color: var(--blue);
-   padding: 20px;
-
+.section2 {
+  display: flex;
+  padding: 20px 60px;
+  background-color: var(--blue);
+  padding: 20px;
 }
 
-.section2Container{
+.section2Container {
   padding: 103px;
   width: 60%;
 }
 
-.section2Info{
+.section2Info {
   padding-top: 190px;
   width: 40%;
-
 }
 
-.section2Info h3{
-color: var(--yellow);
-font-family: var(--pop);
-font-weight:600;
-font-size: var(--subHeading);
-
+.section2Info h3 {
+  color: var(--yellow);
+  font-family: var(--pop);
+  font-weight: 600;
+  font-size: var(--subHeading);
 }
 
-.section2Info h1{
-color: white;
-font-family: var(--pop);
-font-weight: bold;
-font-size: var(--headings);
-padding-top: 5px;
+.section2Info h1 {
+  color: white;
+  font-family: var(--pop);
+  font-weight: bold;
+  font-size: var(--headings);
+  padding-top: 5px;
 }
 
-.section2Info p{
-color: white;
-font-family: var(--pop);
-font-size: var(--paragraphs);
-padding-top: 20px;
-
+.section2Info p {
+  color: white;
+  font-family: var(--pop);
+  font-size: var(--paragraphs);
+  padding-top: 20px;
 }
-
-
- 
-
-
-
-
- <section class="section2">
-      
-      <h3>BEGIN YOUR JOURNEY</h3>
-      <h1>
-        Tiny Legends <br />
-        Big Hearts
-      </h1>
-      <p>
-        Begin your journey into legend: tiny dragons, <br />
-        shimmering pegasi, mischievous kitsune, and <br />
-        watchful basilisks are ready to meet their families.<br />
-        Delight in enchanted encounters, gentle care, and <br />
-        joyful playtime. Heartwarming bonds await as these <br />
-        legendary creatures find their forever homes.
-      </p>
-    </section>
-
