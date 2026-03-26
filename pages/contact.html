@@ -1,35 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <meta name="keywords" content="template, initial setup, html, css, links, futureUse">
-    <meta name="author" content="Michelle Van Der Merwe 251254">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <meta
+      name="keywords"
+      content="template, initial setup, html, css, links, futureUse"
+    />
+    <meta name="author" content="Michelle Van Der Merwe 251254" />
 
     <title>Contact</title>
 
-    <link rel="stylesheet" href="../css/main.css">
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-</head>
- <body>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/4178197db7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body class="contact">
     <header>
       <nav class="navbar">
         <div class="logo">
           <img src="../assets/img/logo.png" />
         </div>
         <div class="navlinks">
-        <a href="../index.html">Home</a>
-        <a href="about.html">Adopt</a>
-        <a href="#">Contact</a>
-    </div>
-        <div class="navSearch">
-          <p>Search</p>
+          <a href="index.html">Home</a>
+          <a href="pages/about.html">Adopt</a>
+          <a href="#" class="active">Contact</a>
+        </div>
+        <!-- Search not working -->
+
+        <div class="search">
+          <div class="input-icon-container">
+            <button class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" type="search" placeholder="Search" />
+            <button class="icon">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
-     </nav>
-</header>
-    
-</body>
+    <section class="contact">
+      <div>
+        <h1>CONTACT US</h1>
+      </div>
+    </section>
+    <section class="cradle">
+      <div class="block1">
+        <h4>ABOUT</h4>
+        <h2>Mythos Cradle</h2>
+        <p>
+          Welcome to The Mythos Cradle, where we are dedicated to nurturing the
+          next generation of legendary companions into loving homes. As a
+          sanctuary and adoption agency, we specialize in connecting families
+          with magical creatures, carefully matching each little legend to the
+          caretakers who will best support their growth and well-being. From
+          playful blue dragons to gentle forest spirits, every adoption is
+          designed to foster wonder, curiosity, and companionship. With a
+          commitment to ethical care, safety, and magical enrichment, we strive
+          to create joyful experiences for both creatures and their new
+          families. Join us as we celebrate the enchantment of mythology and
+          turn legendary beings into cherished members of your household.
+        </p>
+      </div>
+
+      <div class="block2">
+        <img class="theCradleCorner" src="../assets/img/contactImage 1.png" />
+      </div>
+    </section>
+    <section class="cradle top">
+      <div class="block1">
+        <div class="social">
+          <h4>CONTACT US THROUGH OUR</h4>
+          <h2>SOCIAL MEDIA PAGES</h2>
+            <div class="sociallinks">
+              <img src="../assets/img/sm1.png" />
+              <img src="../assets/img/sm2.png" />
+              <img src="../assets/img/sm3.png" />
+              <img src="../assets/img/sm4.png" />
+            </div>
+        </div>
+        <div class="location">
+          <h4>OR VISTIT US AT OUR</h4>
+          <h2>PHYSICAL LOCATION</h2>
+          <div class="map-responsive">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.317116496233!2d28.206833211482532!3d-25.891943777175502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1773837791279!5m2!1sen!2sza"
+              width="100%" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="block2 card">
+        <h2 class="header">SEND US A MESSAGE</h2>
+        <form class="content">
+          <div class="input-container">
+            <label for="namne">Your name</label>
+            <input type="text" name="name" id="name" placeholder="Abc"/>
+          </div>
+          <div class="input-container">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email"  placeholder="Abc@def.com"/>
+          </div>
+          <div class="input-container">
+            <label for="namne">Subject</label>
+            <input type="text" name="subject" id="subject"  placeholder="This is an optional"/>
+          </div>
+          <div class="input-container">
+            <label for="namne">Message</label>
+            <textarea name="message" id="message" placeholder="Hi! i’d like to ask about" rows="4"></textarea>
+          </div>
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+	  
+	   <footer>
+      <div class="footer">
+        <div class="logo">
+          <img src="../assets/img/logo.png" />
+          <p>Where every legendary creature finds a loving home.+</p>
+        </div>
+        <div class="company">
+          <h3>Company</h3>
+          <a href="#">Home</a>
+          <a href="pages/about.html">Adopt</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="social">
+          <h3>Social Media Links</h3>
+          <div class="socialLinks">
+            <img src="../assets/img/sm1.png" />
+            <img src="../assets/img/sm2.png" />
+            <img src="../assets/img/sm3.png" />
+            <img src="../assets/img/sm4.png" />
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footerTerms">
+        <p>All Rights Reserved &copy Open Window 2024</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy & Policy</p>
+      </div>
+    </footer>
+	 <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

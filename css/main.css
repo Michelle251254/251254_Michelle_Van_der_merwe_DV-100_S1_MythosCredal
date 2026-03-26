@@ -28,6 +28,10 @@ body {
   src: url("../assets/fonts/mythology_of_egypt/Mythology\ Of\ Egypt.otf");
 }
 
+.corner {
+  border-radius: 16px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -40,13 +44,18 @@ body {
   position: relative;
   border-radius: 35px;
 }
+
 header {
   position: absolute;
   width: 100%;
 }
 
-.logo img {
+.logo {
   width: 250px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .navlinks {
@@ -58,6 +67,70 @@ header {
   text-decoration: none;
   color: rgb(67, 67, 67);
   font-weight: 600;
+}
+
+.hero h1 {
+  text-decoration: none;
+  font-size: 80pt;
+  font-family: moth;
+  padding-top: 150pt;
+  padding-right: 110pt;
+}
+.index .hero {
+  align-items: center;
+  background: url("../assets/img/homeHeader.png") no-repeat center / cover;
+  flex-direction: row-reverse;
+  min-height: calc(100vh + 100px);
+  /*Compensate for the invalid aspect ratio of the image*/
+}
+.index .hero div {
+  flex: 0 1 40%;
+  margin-top: 20%;
+}
+.index .hero h1 {
+  color: var(--yellow);
+}
+
+.contact .hero {
+  background: url("../assets/img/contactHeader.png") no-repeat center / cover;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0px 50px 0px;
+}
+
+.hero p {
+  margin-left: 15px;
+  font-family: var(--meta);
+  font-size: var(--subHeading);
+  color: white;
+}
+
+/*Input container with icons on both sides*/
+.input-icon-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+/*Icon Buttons*/
+.input-icon-container button {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+/*start icon of input*/
+.input-icon-container button:first-child {
+  left: 15px;
+  padding-left: 0;
+}
+/*End icon of input*/
+.input-icon-container button:last-child {
+  right: 15px;
+  border-left: solid 1px gray;
+  padding-right: 0;
 }
 
 .hero {
@@ -91,27 +164,6 @@ header {
   font-family: var(--meta);
   font-size: var(--subHeading);
   color: white;
-}
-
-.searchItem {
-  background-color: white;
-  border: none;
-}
-
-.bar {
-  border-right: solid black 2px;
-}
-
-.search {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 55%;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .journeyCarousel {
@@ -239,10 +291,6 @@ header {
   text-align: center;
 }
 
-.corner {
-  border-radius: 16px;
-}
-
 .pastFriendsContainer {
   display: flex;
   justify-content: center;
@@ -360,7 +408,6 @@ header {
 }
 
 .filter {
-   
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -381,10 +428,9 @@ header {
 }
 
 .filter {
-  border-right: solid rgba(0, 0, 0, 0.6) 2px;
+  border-right: solid rgba(96, 110, 123, 0.6) 3px;
   padding-right: 50px;
   margin: 5px;
-  gap:;
 }
 
 .barText {
@@ -392,7 +438,6 @@ header {
   font-size: 11pt;
   font-weight: 600;
   color: #ffdb86;
-  
 }
 
 .show {
@@ -460,3 +505,152 @@ header {
 .upDownButton {
   align-items: baseline;
 }
+
+/*Contact */
+
+/*Generic button class*/
+.button {
+  padding: 20px 60px;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  background-color: var(--Lblue);
+  font-family: var(--pop);
+  font-weight: 650;
+  font-size: var(--buttonSize);
+}
+
+/* Google Map insert */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Fix the Aspect Ratio */
+  position: relative;
+  height: 0;
+  border-radius: 20px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*Input with place for icons*/
+.input-icon-container input {
+  width: 100%;
+  padding: 15px 40px 15px 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 0;
+}
+.card .header {
+  color: white;
+  margin: 10px 30px;
+}
+.card .content {
+  margin: 0px 30px;
+}
+.card {
+  background-image: url(../assets/img/formBackground.png);
+  background-size: cover;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.input-container input,
+.input-container textarea {
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 30px;
+}
+
+.footer p {
+  color: black;
+}
+
+.company h3 {
+  font-family: var(--pop);
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.company a {
+  color: var(--gray);
+  font-family: var(--pop);
+  font-size: 11pt;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer div .socialLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.social h3 {
+  font-family: var(--pop);
+}
+
+.socialLinks img {
+  max-width: 70px;
+}
+.divider {
+  border-top: solid 1px gray;
+  margin: 0 10%;
+}
+
+.footerTerms {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footerTerms :first-child {
+  flex: 0 1 60%;
+}
+/*Footer Section */
