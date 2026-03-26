@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="keywords" content="template, initial setup, html, css, links, futureUse">
+    <meta name="author" content="Michelle Van Der Merwe 251254">
+    
+
+    <title>Adopt</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/4178197db7.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+ <body class="adopt">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="../assets/img/logo.png" />
+        </div>
+        <div class="navlinks">
+          <a href="/index.html">Home</a>
+          <a href="#" class="active">Adopt</a>
+          <a href="/pages/contact.html">Contact</a>
+        </div>
+        <!-- Search not working -->
+
+        <div class="search">
+          <div class="input-icon-container">
+            <button class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" type="search" placeholder="Search" />
+            <button class="icon">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+        <span class="pagename c-white">Adopt A creature</span>
+    </section>
+    <section class="column">
+        <h2>Your journey with a little legend begins here.</h2>
+        <p class="ta-c">Adopting a little legend doesn’t cost a thing — our focus is finding loving homes. To make their arrival extra special, you can choose 
+optional starter packages made just for your creature: tiny beds, treats, toys, and more. You can even get multiple packages if your 
+legend will have indoor and outdoor spaces. After you complete your application, we’ll arrange a magical meeting so you can see 
+which creature is the perfect fit. We’ve also included a beginners friendly rating with our creatures so that you can gauge if you are 
+ready to make them a part of your family</p>
+    </section>
+    <section class="filter">
+      <div class="flex-row-20">
+        <i class="fa fa-sliders"></i>
+        <div class="p">
+          Filter
+        </div>
+        <div class="dot-block">
+          <span></span><span></span>
+          <span></span><span></span>
+        </div>
+      </div>
+      <div class="f-50-0 b-l-1 p-l-20 m-l-20 p">Showing 1–16 of 32 results</div>
+      <div class="flex-row-20">
+          <div class="p">Show</div>
+          <div>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6" selected>6</option>
+            </select>
+          </div>
+          <div class="p">Short by</div>
+          <div>
+            
+            <select value="6">
+              <option value="default" selected>Default</option>
+              <option value="Bed" >Bed</option>
+              <option value="Treats" >Treats</option>
+              <option value="Toys" >Toys</option>
+              <option value="Unique_Item" >Unique Item</option>
+              <option value="Price" >Price</option>
+            </select>
+      </div>
+    </section>
+    
+    <section class="sell_item odd">
+      <div class="image">
+        <img src="../assets/img/adopt1.png"/>
+      </div>
+      <div class="text">
+        <h2>Blue Dragon – Azuron</h2>
+        <div class="price">R 2 500.00 &#09; <s>R 5 000.00</s></div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;</span>Friendly Ally</div>
+        <div class="p">Azuron is a curious little dragon with a spark of mischief in his eyes. He 
+            loves exploring hidden nooks and curling up in warm spots after a playful 
+            flight, leaving tiny trails of blue sparks wherever he goes. He thrives on 
+            attention and gentle play, and his favorite games involve chasing floating 
+            spark orbs around the room</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Cozy lava-foam bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Frostberry treats</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Flame-safe balls, Wing-wrangling hoops, Tiny treasure chests</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Mini Fire Orb</span>
+          </div>
+      </div>
+    </section>
+    <section class="sell_item even">
+      <div class="image">
+        <img src="../assets/img/adopt2.png"/>
+      </div>
+      <div class="text">
+        <h2>Kitsune – Yuki</h2>
+        <div class="price">R 4 500.00</div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;</span>Gentle Guardian</div>
+        <div class="p">Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. 
+She delights in playful tricks and quietly watching over her friends, her 
+tails swishing with contentment. Yuki especially enjoys interactive games 
+and hiding small trinkets to surprise her caretakers</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Silk-lined den bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Moonfruit snacks</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Puzzle cubes, Jingling bells, Magical ribbons</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Mini Spirit Lantern</span>
+          </div>
+      </div>
+    </section>
+<section class="sell_item odd">
+      <div class="image">
+        <img src="../assets/img/adopt3.png"/>
+      </div>
+      <div class="text">
+        <h2>Griffin – Aurelia</h2>
+        <div class="price">R 6 500.00</div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;</span>Friendly Ally</div>
+        <div class="p">Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, 
+exploring high perches, and curling up near those she trusts, always 
+watching the world with wise golden eyes. She adores gentle games of 
+chase and loves to show off her tiny but majestic wings</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Feather-lined perch bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Sunfruit treats</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Wing rings, Soft talon toys, Mini prey plushies</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Tiny Sunstone Perch</span>
+          </div>
+      </div>
+    </section>    
+<section class="sell_item even">
+      <div class="image">
+        <img src="../assets/img/adopt4.png"/>
+      </div>
+      <div class="text">
+        <h2>Water Wisp – Lumina</h2>
+        <div class="price">R 40,000.00
+</div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>Beloved Companion</div>
+        <div class="p">Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and 
+curious, she glides through her surroundings, bringing calm and quiet 
+magic wherever she goes. She loves to follow gentle ripples in water or 
+light games, leaving a faint glowing trail that enchants everyone nearby.</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Crystal bowl bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Dewdrop nectar</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Floating orbs, Ripple rings, Water bell</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Mini Waterfall Sphere</span>
+          </div>
+      </div>
+    </section>   
+<section class="sell_item odd">
+      <div class="image">
+        <img src="../assets/img/adopt5.png"/>
+      </div>
+      <div class="text">
+        <h2>Pegasus – Starwind</h2>
+        <div class="price">R 5 000.00</div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;</span>Gentle Guardian</div>
+        <div class="p">Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves 
+short flights and sunny naps, his gleaming wings always ready for 
+discovery. He enjoys small games of chase and nuzzles to show affection, 
+quickly forming strong bonds with those he trusts.</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Soft cloud bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Starhay treats</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Flying hoops, Feathered balls, Small riding saddle</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Mini Wind Hoof Ball</span>
+          </div>
+      </div>
+    </section>   
+<section class="sell_item even">
+      <div class="image">
+        <img src="../assets/img/adopt6.png"/>
+      </div>
+      <div class="text">
+        <h2>Forest Spirit – Briar</h2>
+        <div class="price">R 3 500.00</div>
+        <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>Beloved Companion</div>
+        <div class="p">Briar is a tiny guardian of the woods, curious, gentle, and full of life. He 
+loves leafy hideaways and quietly exploring gardens, always humming 
+with a touch of magic. He enjoys collecting small natural treasures and 
+bringing them to his caretakers as gifts, showing his playful personality.</div>
+          <div class="add">
+            <div class="stepper">
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="1" min="0" max="1000">
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+            </div>
+            <button class="button">Add to Cradle</button></div>
+          <div class="info-container">
+            <span class="label">Bed</span>
+            <span class="colon">:</span>
+            <span class="value">Mossy bed</span>
+
+            <span class="label">Treats</span>
+            <span class="colon">:</span>
+            <span class="value">Berry treats</span>
+
+            <span class="label">Toys</span>
+            <span class="colon">:</span>
+            <span class="value">Twig rattles, Leaf dolls, Acorn balls</span>
+
+            <span class="label">Unique Item</span>
+            <span class="colon">:</span>
+            <span class="value">Mini Leafy Hideout</span>
+          </div>
+          <div class="ta-r"><button class="button b-yellow">View Cradle</button></div>
+      </div>
+    </section>   
+<footer>
+      <div class="footer-info">
+        <div class="logo">
+          <img src="../assets/img/logo.png" />
+          <p class="pb">Where every legendary creature finds a loving home.+</p>
+        </div>
+        <div class="company">
+          <h4>Company</h4>
+          <a href="#">Home</a>
+          <a href="pages/about.html">Adopt</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="social">
+          <h4>Social Media Links</h4>
+          <div class="sociallinks">
+            <img src="../assets/img/sm1.png" />
+            <img src="../assets/img/sm2.png" />
+            <img src="../assets/img/sm3.png" />
+            <img src="../assets/img/sm4.png" />
+          </div>
+        </div>
+      </div>
+      <div class="devider"></div>
+      <div class="footer-terms">
+            <p class="pb">All Rights Reserved &copy Open Window 2024</p>
+            <p class="pb">Terms & Conditions</p>
+            <p class="pb">Privacy & Policy</p>
+      </div>
+    </footer>    
+</body>
+</html>

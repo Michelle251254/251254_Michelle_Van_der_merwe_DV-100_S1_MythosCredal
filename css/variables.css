@@ -1,0 +1,16 @@
+:root {
+  --yellow: #e9ad1c;
+  --navebarC: rgba(255, 255, 255, 0.7);
+  --blue: #002d68;
+  --Lblue: #15d5f5;
+  --dPurple: #2f004e;
+  --gray: #676767;
+  --meta: 'Metamorphous';
+  --pop: Poppins;
+  --headings: 40pt;
+  --subHeading: 18pt;
+  --tagline: 24pt;
+  --paragraphs: 16pt;
+  --buttonSize: 16pt;
+  --stepper-color: var(--blue);
+}

@@ -1,0 +1,30 @@
+.stepper {
+  display: flex;
+  border: none;
+  width: max-content;
+  border-radius: 10px;
+  background-color: var(--stepper-color);
+}
+
+.stepper input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: var(--stepper-color);
+  font-weight: 600;
+}
+/*Hide the normal buttons from the input*/
+.stepper input::-webkit-outer-spin-button,
+.stepper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.stepper button {
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+}

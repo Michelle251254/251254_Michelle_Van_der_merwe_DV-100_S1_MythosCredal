@@ -10,8 +10,7 @@
     />
     <meta name="author" content="Michelle Van Der Merwe 251254" />
 
-    <title>Contact</title>
-
+    <title>The Mythos Cradle</title>
     <!-- bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -19,21 +18,12 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
-    <!-- font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/main.css" />
     <!-- font awesome link -->
     <script
       src="https://kit.fontawesome.com/4178197db7.js"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="../css/main.css" />
   </head>
 
   <body class="contact">
@@ -43,8 +33,8 @@
           <img src="../assets/img/logo.png" />
         </div>
         <div class="navlinks">
-          <a href="index.html">Home</a>
-          <a href="pages/about.html">Adopt</a>
+          <a href="/index.html">Home</a>
+          <a href="/pages/adopt.html">Adopt</a>
           <a href="#" class="active">Contact</a>
         </div>
         <!-- Search not working -->
@@ -62,16 +52,14 @@
         </div>
       </nav>
     </header>
-    <section class="contact">
-      <div>
-        <h1>CONTACT US</h1>
-      </div>
+    <section class="hero">
+      <span class="pagename">CONTACT US</span>
     </section>
     <section class="cradle">
       <div class="block1">
-        <h4>ABOUT</h4>
-        <h2>Mythos Cradle</h2>
-        <p>
+        <h4 class="c-l-blue">ABOUT</h4>
+        <h2 class="c-blue">Mythos Cradle</h2>
+        <p class="c-gray">
           Welcome to The Mythos Cradle, where we are dedicated to nurturing the
           next generation of legendary companions into loving homes. As a
           sanctuary and adoption agency, we specialize in connecting families
@@ -93,27 +81,28 @@
     <section class="cradle top">
       <div class="block1">
         <div class="social">
-          <h4>CONTACT US THROUGH OUR</h4>
-          <h2>SOCIAL MEDIA PAGES</h2>
-            <div class="sociallinks">
-              <img src="../assets/img/sm1.png" />
-              <img src="../assets/img/sm2.png" />
-              <img src="../assets/img/sm3.png" />
-              <img src="../assets/img/sm4.png" />
-            </div>
+          <h4 class="c-l-blue">CONTACT US THROUGH OUR</h4>
+          <h2 class="c-blue">SOCIAL MEDIA PAGES</h2>
+          <div class="sociallinks">
+            <img src="../assets/img/sm1.png" />
+            <img src="../assets/img/sm2.png" />
+            <img src="../assets/img/sm3.png" />
+            <img src="../assets/img/sm4.png" />
+          </div>
         </div>
         <div class="location">
-          <h4>OR VISTIT US AT OUR</h4>
-          <h2>PHYSICAL LOCATION</h2>
+          <h4 class="c-l-blue">OR VISTIT US AT OUR</h4>
+          <h2 class="c-blue">PHYSICAL LOCATION</h2>
           <div class="map-responsive">
-            <iframe 
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.317116496233!2d28.206833211482532!3d-25.891943777175502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1773837791279!5m2!1sen!2sza"
-              width="100%" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade"
+            >
             </iframe>
           </div>
         </div>
@@ -123,39 +112,54 @@
         <form class="content">
           <div class="input-container">
             <label for="namne">Your name</label>
-            <input type="text" name="name" id="name" placeholder="Abc"/>
+            <input type="text" name="name" id="name" placeholder="Abc" />
           </div>
           <div class="input-container">
             <label for="email">Email address</label>
-            <input type="email" name="email" id="email"  placeholder="Abc@def.com"/>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Abc@def.com"
+            />
           </div>
           <div class="input-container">
             <label for="namne">Subject</label>
-            <input type="text" name="subject" id="subject"  placeholder="This is an optional"/>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="This is an optional"
+            />
           </div>
           <div class="input-container">
             <label for="namne">Message</label>
-            <textarea name="message" id="message" placeholder="Hi! i’d like to ask about" rows="4"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Hi! i’d like to ask about"
+              rows="4"
+            ></textarea>
           </div>
           <button class="button" type="submit">Submit</button>
         </form>
       </div>
-	  
-	   <footer>
-      <div class="footer">
+    </section>
+    <footer>
+      <div class="footer-info">
         <div class="logo">
           <img src="../assets/img/logo.png" />
-          <p>Where every legendary creature finds a loving home.+</p>
+          <p class="pb">Where every legendary creature finds a loving home.+</p>
         </div>
         <div class="company">
-          <h3>Company</h3>
+          <h4>Company</h4>
           <a href="#">Home</a>
           <a href="pages/about.html">Adopt</a>
           <a href="pages/contact.html">Contact</a>
         </div>
         <div class="social">
-          <h3>Social Media Links</h3>
-          <div class="socialLinks">
+          <h4>Social Media Links</h4>
+          <div class="sociallinks">
             <img src="../assets/img/sm1.png" />
             <img src="../assets/img/sm2.png" />
             <img src="../assets/img/sm3.png" />
@@ -163,17 +167,12 @@
           </div>
         </div>
       </div>
-      <div class="divider"></div>
-      <div class="footerTerms">
-        <p>All Rights Reserved &copy Open Window 2024</p>
-        <p>Terms & Conditions</p>
-        <p>Privacy & Policy</p>
+      <div class="devider"></div>
+      <div class="footer-terms">
+        <p class="pb">All Rights Reserved &copy Open Window 2024</p>
+        <p class="pb">Terms & Conditions</p>
+        <p class="pb">Privacy & Policy</p>
       </div>
     </footer>
-	 <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
