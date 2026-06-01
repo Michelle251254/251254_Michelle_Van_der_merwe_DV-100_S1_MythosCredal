@@ -95,6 +95,13 @@ footer {
   width: 100%;
 }
 
+#cart-count {
+  color: #000;    
+  font-weight: bold;
+  margin-left: 5px; 
+  font-size: 14px;
+}
+
 /*Hero section moved under the header NAVBAR*/
 .pagename {
   text-decoration: none;
@@ -288,12 +295,17 @@ footer {
   font-size: var(--buttonSize);
 }
 
-.sticky {
+#catalog {
+  padding-top: 20px;
+  padding-bottom: 70px; 
+}
+
+.sticky-cradle-btn {
   position: sticky;
-  top: 80%;
-  bottom: 1%;
-  
-  z-index: +10;
+  bottom: 0;
+  top: auto;
+  z-index: 100;
+  background-color: transparent;
 }
 
 /* Google Map insert */
