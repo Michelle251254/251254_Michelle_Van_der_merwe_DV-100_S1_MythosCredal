@@ -1,4 +1,3 @@
-// cart
 let cart = JSON.parse(localStorage.getItem("magicalCart")) || [];
 
 function updateCartIcon() {
@@ -10,68 +9,70 @@ function updateCartIcon() {
   }
 }
 
-// input counter
+window.addToCart = function (
+  productId,
+  productName,
+  productPrice,
+  buttonElement,
+) {
+  // Find the stepper input next to the button that was clicked
+  const sellItem = buttonElement.closest(".sell_item");
+  const input = sellItem.querySelector('input[type="number"]');
+  const quantity = parseInt(input.value);
 
-window.changeQuantity = function(buttonElement, change) {
-  const stepper = buttonElement.parentNode;
-  const input = stepper.querySelector('input[type="number"]');
-  let currentValue = parseInt(input.value) || 0;
-  
-  currentValue += change;
-  
-  if (currentValue < 0) currentValue = 0;
-  
-  input.value = currentValue;
-  
-  updateCartFromInput(input);
-};
-
-window.updateCartFromInput = function(inputElement) {
-  const productId = inputElement.dataset.productId;
-  const productName = inputElement.dataset.name;
-  const productPrice = parseFloat(inputElement.dataset.price);
-  let newQuantity = parseInt(inputElement.value) || 0;
-
-  if (newQuantity < 0) {
-    newQuantity = 0;
-    inputElement.value = 0;
+  if (quantity === 0) {
+    alert("Please select at least 1 creature!");
+    return;
   }
 
-  const existingItemIndex = cart.findIndex(item => item.id === productId);
+  const existingItem = cart.find((item) => item.id === productId);
 
-  if (newQuantity === 0) {
-    if (existingItemIndex !== -1) {
-      cart.splice(existingItemIndex, 1);
-    }
+  if (existingItem) {
+    existingItem.quantity += quantity;
   } else {
-    if (existingItemIndex !== -1) {
-      cart[existingItemIndex].quantity = newQuantity;
-    } else {
-      cart.push({ id: productId, name: productName, price: productPrice, quantity: newQuantity });
-    }
+    cart.push({
+      id: productId,
+      name: productName,
+      price: productPrice,
+      quantity: quantity,
+    });
   }
 
-  localStorage.setItem('magicalCart', JSON.stringify(cart));
-  updateCartIcon();
-};
+  localStorage.setItem("magicalCart", JSON.stringify(cart));
 
-//sinking the input counter 
-function syncCountersWithCart() {
-  const inputs = document.querySelectorAll('input[data-product-id]');
-  
-  inputs.forEach(input => {
-    const productId = input.dataset.productId;
-    const cartItem = cart.find(item => item.id === productId);
-    
-    if (cartItem) {
-      input.value = cartItem.quantity;
-    } else {
-      input.value = 0;
-    }
-  });
-}
+  updateCartIcon();
+  input.value = 0;
+  const originalText = buttonElement.textContent;
+
+  buttonElement.textContent = "✓ Added!";
+
+  setTimeout(() => {
+    buttonElement.textContent = originalText;
+  }, 1500);
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   updateCartIcon();
-  syncCountersWithCart();
 });
+
+
+const html = `
+    <div class="popout-card navbar">
+      <h2>${item.name}</h2>
+      <div class="price">
+        <h4>R ${item.price}</h4>
+      </div>
+      <div class="price">
+       <h4><s>${item.markdownPrice ? "<s>R" + item.markdownPrice + "</s>" : ""}</s></h4> 
+      </div>
+      <div class="stepper">
+        <button onclick="this.parentNode.querySelector('input').stepDown()">
+          −
+        </button>
+        <input type="number" value="0" min="0" max="1000" />
+        <button onclick="this.parentNode.querySelector('input').stepUp()">
+          +
+        </button>
+      </div>
+    </div>
+    `;

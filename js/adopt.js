@@ -90,20 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
       uniqueItem: "Mini Waterfall Sphere",
       item: false,
     },
-    {
-      id: "Forest Spirit",
-      image: "../assets/img/adopt6.png",
-      name: "Forest Spirit – Briar",
-      rating: { stars: 5, genre: "Beloved Companion" },
-      price: 3500,
-      description:
-        "Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.",
-      bed: "Mossy bed",
-      treats: "Berry treats",
-      toys: "Twig rattles, Leaf dolls, Acorn balls",
-      uniqueItem: "Mini Leafy Hideout",
-      item: false,
-    },
   ];
 
   let showTrueProducts = true;
@@ -122,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const starIcons = "★".repeat(product.rating.stars);
       const oddOrEven = index % 2 === 0 ? "odd" : "even";
 
-      // Notice the onclick now passes the product details to cart.js!
       const html = `
         <section class="sell_item ${oddOrEven}">
           <div class="image">
@@ -137,17 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
               <span class="stars">${starIcons}</span> ${product.rating.genre}
             </div>
             <div class="p">${product.description}</div>
-                       <div class="add">
+            <div class="add">
               <div class="stepper">
-                <button onclick="changeQuantity(this, -1)">−</button>
-                <input type="number" value="0" min="0" max="1000" 
-                  data-product-id="${product.id}" 
-                  data-name="${product.name}" 
-                  data-price="${product.price}" 
-                  onchange="updateCartFromInput(this)" />
-                <button onclick="changeQuantity(this, 1)">+</button>
+                <button onclick="this.parentNode.querySelector('input').stepDown()">−</button>
+                <input type="number" value="0" min="0" max="1000" />
+                <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
               </div>
-              <button class="button">Add to Cradle</button> <!-- Now just a secondary visual button -->
+              <button class="button" onclick="addToCart('${product.id}', '${product.name}', ${product.price}, this)">Add to Cradle</button>
             </div>
             <div class="info-container">
               <span class="label">Bed</span><span class="colon">:</span><span class="value">${product.bed}</span>
@@ -162,4 +143,4 @@ document.addEventListener("DOMContentLoaded", () => {
       container.insertAdjacentHTML("beforeend", html);
     });
   }
-});
+});  

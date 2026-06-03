@@ -96,9 +96,9 @@ footer {
 }
 
 #cart-count {
-  color: #000;    
+  color: #000;
   font-weight: bold;
-  margin-left: 5px; 
+  margin-left: 5px;
   font-size: 14px;
 }
 
@@ -297,7 +297,7 @@ footer {
 
 #catalog {
   padding-top: 20px;
-  padding-bottom: 70px; 
+  padding-bottom: 70px;
 }
 
 .sticky-cradle-btn {
@@ -586,4 +586,15 @@ p,
 
 .c-black {
   color: black;
+}
+
+.popout-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: baseline;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 2px solid black;
+
 }
