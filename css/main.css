@@ -588,13 +588,34 @@ p,
   color: black;
 }
 
-.popout-card {
+.cart-modal-style .popout-card {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
   align-items: baseline;
-  margin-left: 150px;
-  margin-right: 150px;
-  border: 2px solid black;
+  margin: 50px;
+  padding: 20px;
+  border: 2px solid var(--yellow);
+  border-radius: 15px;
+}
 
+.cart-modal-style {
+  background-color: white;
+  border: 5px solid var(--yellow);
+  border-radius: 15px;
+}
+
+.cart-modal-style .modal-header {
+  background-color: var(--yellow);
+  color: white;
+  border-bottom: 5px solid var(--yellow);
+}
+
+.cart-modal-style .modal-body {
+  padding: 30px;
+}
+
+.modal-footer-style{
+  padding: 30px;
+  margin: 30px;
 }

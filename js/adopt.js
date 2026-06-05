@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("catalog");
     if (!container) return;
 
+    container.innerHTML = "";
+
     products.forEach((product, index) => {
       const starIcons = "★".repeat(product.rating.stars);
       const oddOrEven = index % 2 === 0 ? "odd" : "even";
@@ -143,4 +145,41 @@ document.addEventListener("DOMContentLoaded", () => {
       container.insertAdjacentHTML("beforeend", html);
     });
   }
-});  
+  // search bar
+
+  const searchBar = document.getElementById("search-bar");
+
+  if (searchBar) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlSearchQuery = urlParams.get("search");
+
+    if (urlSearchQuery) {
+      searchBar.value = urlSearchQuery;
+      const initialQuery = urlSearchQuery.toLowerCase();
+
+      const initialFiltered = productsTrue.filter((product) => {
+        const nameMatch = product.name.toLowerCase().includes(initialQuery);
+        const descMatch = product.description
+          .toLowerCase()
+          .includes(initialQuery);
+        return nameMatch || descMatch;
+      });
+
+      renderProducts(initialFiltered);
+    }
+
+    searchBar.addEventListener("input", (event) => {
+      const searchQuery = event.target.value.toLowerCase();
+
+      const filteredProducts = productsTrue.filter((product) => {
+        const nameMatch = product.name.toLowerCase().includes(searchQuery);
+        const descMatch = product.description
+          .toLowerCase()
+          .includes(searchQuery);
+        return nameMatch || descMatch;
+      });
+
+      renderProducts(filteredProducts);
+    });
+  }
+});

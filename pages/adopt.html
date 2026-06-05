@@ -40,7 +40,13 @@
 
         <div class="search">
           <div class="input-icon-container">
-            <button class="icon" id="cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <input type="search" id="search-bar" placeholder="Search creatures..." />
+            <button
+              class="icon"
+              id="cart-icon"
+              data-bs-toggle="modal"
+              data-bs-target="#cartModal"
+            >
               <i class="fa-solid fa-basket-shopping"></i>
               <span id="cart-count"></span>
             </button>
@@ -105,7 +111,13 @@
       <div id="catalog"></div>
 
       <div class="ta-r sticky-cradle-btn">
-        <button class="button b-yellow">View Cradle</button>
+        <button
+          class="button b-yellow"
+          data-bs-toggle="modal"
+          data-bs-target="#cartModal"
+        >
+          View Cradle
+        </button>
       </div>
     </main>
 
@@ -145,38 +157,55 @@
         <p class="pb">Terms & Conditions</p>
         <p class="pb">Privacy & Policy</p>
       </div>
-      <div class="modal" tabindex="-1">
-        <!-- Modal html -->
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+      <div class="modal" tabindex="-1"></div>
+    </footer>
+
+    <!-- cart modal -->
+    <div
+      class="modal fade cart-modal-style"
+      id="cartModal"
+      tabindex="-1"
+      aria-labelledby="cartModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="cartModalLabel">Your Cradle</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="cart-empty-message" class="text-center text-muted pt-3">
+              <h1>Your cradle is empty.</h1>
+              <h4>Go adopt some magical creatures!</h4>
             </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
+
+            <div id="cart-items-container"></div>
+          </div>
+          <div
+            class="modal-footer modal-footer-style d-flex justify-content-between"
+          >
+            <button type="button" class="btn btn-danger" onclick="clearCart()">
+              Clear All
+            </button>
+            <h5>Total: R<span id="cart-total-price">0</span></h5>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
