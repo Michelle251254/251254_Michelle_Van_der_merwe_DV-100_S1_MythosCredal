@@ -1,0 +1,13 @@
+gitlink 
+https://github.com/Michelle251254/251254_Michelle_Van_der_merwe_DV-100_S1_MythosCredal
+
+Refers list
+
+SuperSimpleDev(May 9, 2024). 
+JavaScript Tutorial Full Course - Beginner to Pro [Video]. YouTube. https://www.youtube.com/watch?v=EerdGm-ehJQ&t=42092s
+
+W3Schools. (n.d.). W3Schools online web tutorials. W3Schools.https://www.w3schools.com/
+
+Font Awesome. (n.d.). fa-star. Font Awesome. Retrieved June 5, 2026, from https://fontawesome.com/v4/icon/star
+
+Bro Code. (Sep 21, 2023). Learn HTML span & div in 4 minutes! [Video]. YouTube. https://youtu.be/WbnCll6vvw4?si=myzX6z_pJLyxKODz
