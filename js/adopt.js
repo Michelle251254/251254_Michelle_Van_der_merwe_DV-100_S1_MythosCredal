@@ -100,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProducts(productsFalse);
   }
 
+  //looping page
+
   function renderProducts(products) {
     const container = document.getElementById("catalog");
     if (!container) return;
